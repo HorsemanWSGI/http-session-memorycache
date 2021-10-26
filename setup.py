@@ -1,5 +1,5 @@
 import os
-from setuptools import setup, find_packages
+from setuptools import setup, find_packages, Extension
 
 
 version = '0.1'
@@ -49,4 +49,5 @@ setup(
             ["src/http_session_memorycache/store.c"],
             extra_compile_args=["-O3"],  # Max optimization when compiling.
         )
+    ]
 )
